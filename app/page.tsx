@@ -35,7 +35,7 @@ export default function Home() {
 
           {/* Right Sidebar - News & Suggestions */}
           <Grid
-            size={{ xs: 12, sm: 12, md: 4 }}
+            size={{ xs: 12, sm: 12, md: 3 }}
             sx={{
               display: { xs: 'none', md: 'block' },
               ml: 'auto'
