@@ -1,6 +1,6 @@
 'use client';
 
-import { Container, Box, Grid2 } from '@mui/material';
+import { Container, Box, Grid } from '@mui/material';
 import Navbar from '@/components/Navbar';
 import LeftSidebar from '@/components/LeftSidebar';
 import CenterFeed from '@/components/CenterFeed';
@@ -12,29 +12,29 @@ export default function Home() {
       <Navbar />
 
       <Container maxWidth="xl" sx={{ py: 3, px: { xs: 2, md: 3 } }}>
-        <Grid2 container spacing={2}>
+        <Grid container spacing={2}>
           {/* Left Sidebar - Profile & Navigation */}
-          <Grid2
+          <Grid
             size={{ xs: 12, sm: 12, md: 2.5 }}
             sx={{
               display: { xs: 'none', md: 'block' }
             }}
           >
             <LeftSidebar />
-          </Grid2>
+          </Grid>
 
           {/* Center Feed - Main Content */}
-          <Grid2
+          <Grid
             size={{ xs: 12, sm: 12, md: 6 }}
             sx={{
               pl: { md: 2 }
             }}
           >
             <CenterFeed />
-          </Grid2>
+          </Grid>
 
           {/* Right Sidebar - News & Suggestions */}
-          <Grid2
+          <Grid
             size={{ xs: 12, sm: 12, md: 4 }}
             sx={{
               display: { xs: 'none', md: 'block' },
@@ -42,8 +42,8 @@ export default function Home() {
             }}
           >
             <RightSidebar />
-          </Grid2>
-        </Grid2>
+          </Grid>
+        </Grid>
       </Container>
     </Box>
   );
